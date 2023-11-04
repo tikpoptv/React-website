@@ -27,7 +27,7 @@ const projectsData = [
     id: 3,
     title: "2D Drawing",
     description: "Create 2D Drawing in unity in class.",
-    image: "/images/projects/2d.png",
+    image: "/images/projects/2D_Drawing.png",
     tag: ["All", "CPE101"],
     gitUrl: "/",
     previewUrl: "/",
