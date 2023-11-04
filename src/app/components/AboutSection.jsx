@@ -67,8 +67,8 @@ const AboutSection = () => {
               <p className="text-lg mb-4">University:</p>
             </div>
             <div className="justify-center">
-              <p className="text-lg mb-4">Nutthawut Jaroenchokwittaya</p>
-              <p className="text-lg mb-4">January 24, 2004</p>
+              <p className="text-lg mb-4">Jedsadaporn Pannok</p>
+              <p className="text-lg mb-4">November 6, 2004</p>
               <p className="text-lg mb-4"><a href="mailto:tik.jedsdp@gmail.com">tik.jedsdp@gmail.com</a></p>
               <p className="text-lg mb-4"><a href="mailto:jedsadaporn.pann@kmutt.ac.th">jedsadaporn.pann@kmutt.ac.th</a></p>
               <p className="text-lg mb-4"><a href="tel:0638014142">063 801 4142</a></p>
