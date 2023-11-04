@@ -1,0 +1,132 @@
+.tech-stack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  .skill-heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Added to make icons wrap to the next line on smaller screens */
+  }
+  
+  .tech-icon {
+    font-size: 7em;
+    margin: 15px;
+    padding: 10px;
+    opacity: 0.93;
+    border: 1.7px solid rgb(51, 255, 255);
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+    overflow: hidden;
+    animation: slideIcon 5s linear infinite; /* Add animation here */
+}
+  
+  @keyframes slideIcon {
+    0% {
+      transform: translateX(0px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+  .test-text {
+    font-size: 1em;
+    color: #333;
+  }
+  
+  @media (max-width: 767px) {
+    .tech-icon {
+        margin: 10px !important;
+        width: 50%;
+    }
+
+    .tech-icon:hover {
+        transform: scale(1.05) !important;
+        overflow: hidden !important;
+        border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+    }
+
+    .tech-icon:after {
+        content: "Your description here"; /* Add the desired description text */
+        display: block;
+        text-align: center;
+        font-size: 0.8em;
+        color: #333;
+    }
+}
+
+  
+/* Popup.css */
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    
+  }
+  
+  .popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .popup-content {
+    font-size: 1em;
+    color: #333;
+  }
+
+  /* Techstack.css */
+
+/* เพิ่มหรือปรับแต่งสไตล์ของปุ่มปิดตามความต้องการ */
+/* Techstack.css */
+
+.custom-close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px; /* เพิ่มขนาดของตัวอักษร */
+    color: #333; /* สีตามที่คุณต้องการ */
+    /* ปรับแต่งขนาดของปุ่มปิดและคำสั่งอื่น ๆ ตามที่คุณต้องการ */
+  }
+  
+  
+
+
+  

@@ -42,3 +42,89 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(var(--foreground-rgb));
 }
+
+.skill {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.skill .text-content {
+  padding-bottom: 20px;
+}
+
+.scroll-down-section {
+  display: none;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: transform 0.5s;
+}
+
+.scroll-down-section.open {
+  transform: translateY(0);
+}
+
+.scroll-down-section.closed {
+  transform: translateY(100%);
+}
+
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(18, 18, 18, 0);
+  transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.navbar.scrolled {
+  background-color: rgba(18, 18, 18, 0.9);
+  opacity: 0.9;
+}
+
+/* สำหรับ Navbar ในสถานะแสดงอนิเมชั่นเลื่อนลงมา */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.navbar.scrolled {
+  animation: slideDown 0.5s ease-in-out;
+}
+
+
+/* styles.css */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.about-section {
+  animation: bounce 10s ;
+}
+
+.image-size {
+  width: 100px;
+  height: 100px;
+}
