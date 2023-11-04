@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "2D Drawing",
-    description: "Create 2D Drawing in unity in class.",
+    description: "Create 2D Drawing in Autocad in class.",
     image: "/images/projects/2D_Drawing.png",
     tag: ["All", "CPE101"],
     gitUrl: "/",
@@ -85,7 +85,7 @@ const projectsData = [
 
   {
     id: 9,
-    title: "MSS Project",
+    title: "Recommended_places_in_Anime",
     description: "It's a simple website using HTML but it's very beautiful. You can click the link to view.",
     image: "/images/projects/websitesim.png",
     tag: ["All", "Other"],
