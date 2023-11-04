@@ -10,6 +10,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
 import AchievementsSection from "./components/AchievementsSection";
+import Cursor from "./components/cursor";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -23,6 +24,7 @@ export default function Home() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
+      <Cursor />
       {loading ? (
         <div className="flex items-center justify-center min-h-screen bg-[#121212]">
           <HashLoader color="#36d7b7" loading={loading} size={100} />
@@ -32,6 +34,7 @@ export default function Home() {
           <Head>
             <link rel="shortcut icon" href="/favicon.ico" />
           </Head>
+         
           <Navbar />
           <div className="container mt-24 mx-auto px-12 py-4">
             <HeroSection />
